@@ -1,0 +1,25 @@
+Objetivo:
+Simular uma API para sistema de Pizzaria Delivery.
+
+* Entender o mínimo necessário sobre  o que seria uma API.
+* Entender as Camadas da API.
+* Construir algumas entidades da Camada.
+
+* Cliente (id, nome, endereço.)
+* Pizza (id, Tipo da Pizza, Tipo de Borda, Lista de Sabores, valor.)
+* Bebuda (id, nome, valor.)
+* Pedido (id, Data/Hora, Cliente, Lista de Pizzas, ValorTotal.)
+
+MVC - model, view, cotroller.
+Model => Classes, nossas entidades da regra de negocio.
+View => Tudo aquilo que eu recebo e envio ao usuário.
+Controller => Controllador, onde inicia a regra de negocio da Aplicação.
+
+Repository => Simular o Banco de Dados.
+
+Relatórios, saber quantas pizzas eu vendi em um dia.
+Qual foi o meu faturamento.
+Qual foi a pizza mais vendida.
+
+
+
