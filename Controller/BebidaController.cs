@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PizzariaCSharp.Controller.Interfaces;
 using PizzariaCSharp.Model;
 using PizzariaCSharp.Repository;
 
 namespace PizzariaCSharp.Controller
 {
-    public class BebidaController
+    public class BebidaController : ICrudController<Bebida>
     {
         private BebidaRepository _repositoryBebida;
 
@@ -38,6 +39,7 @@ namespace PizzariaCSharp.Controller
             bebida.Id = id;
             return _repositoryBebida.Atualizar(bebida);
         }
+
 
     }
 }

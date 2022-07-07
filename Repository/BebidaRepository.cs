@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using PizzariaCSharp.Model;
+using PizzariaCSharp.Repository.Interfaces;
 
 namespace PizzariaCSharp.Repository
 {
-    public class BebidaRepository
+    public class BebidaRepository : ICrudRepository<Bebida>
     {
         private  List<Bebida> _bebidas;
         private int _ultimoId = 0;
@@ -62,6 +63,7 @@ namespace PizzariaCSharp.Repository
 
             _bebidas.Remove(bebida);
         }
+
 
 
 
