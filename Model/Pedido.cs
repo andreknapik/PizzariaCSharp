@@ -7,7 +7,7 @@ namespace PizzariaCSharp.Model
 {
     public class Pedido
     {
-        public int Id {get; private set;}
+        public int Id {get; set;}
         public DateTime DataEHora {get;private set;}
         public Cliente Cliente {get;private set;}
         public List<Pizza> Pizzas {get;private set;}

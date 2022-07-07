@@ -3,34 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using PizzariaCSharp.Model;
+using PizzariaCSharp.Repository.Interfaces;
 
 namespace PizzariaCSharp.Controller.Interfaces
 {
     public class PedidoController : ICrudController<Pedido>
     {
+        private ICrudRepository<Pedido> _repositoryPedido;
+
+        public PedidoController(ICrudRepository<Pedido> repositoryPedido)
+        {
+            _repositoryPedido = repositoryPedido;
+        }
+
         public Pedido Adicionar(Pedido modelo)
         {
-            throw new NotImplementedException();
+            return _repositoryPedido.Adicionar(modelo);
         }
 
         public Pedido Atualizar(int id, Pedido modelo)
         {
-            throw new NotImplementedException();
+            modelo.Id = id;
+            return _repositoryPedido.Atualizar(modelo);
         }
 
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            _repositoryPedido.Deletar(id);
         }
 
         public Pedido Obter(int id)
         {
-            throw new NotImplementedException();
+            return _repositoryPedido.Obter(id);
         }
 
         public List<Pedido> ObterTodos()
         {
-            throw new NotImplementedException();
+            return _repositoryPedido.ObterTodos();
         }
     }
 }

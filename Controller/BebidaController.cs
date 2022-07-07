@@ -5,14 +5,15 @@ using System.Threading.Tasks;
 using PizzariaCSharp.Controller.Interfaces;
 using PizzariaCSharp.Model;
 using PizzariaCSharp.Repository;
+using PizzariaCSharp.Repository.Interfaces;
 
 namespace PizzariaCSharp.Controller
 {
     public class BebidaController : ICrudController<Bebida>
     {
-        private BebidaRepository _repositoryBebida;
+        private ICrudRepository<Bebida> _repositoryBebida;
 
-        public BebidaController(BebidaRepository repositoryBebida)
+        public BebidaController(ICrudRepository<Bebida> repositoryBebida)
         {
             _repositoryBebida = repositoryBebida;
         }
