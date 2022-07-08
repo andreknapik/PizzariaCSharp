@@ -22,4 +22,9 @@ Qual foi o meu faturamento.
 Qual foi a pizza mais vendida.
 
 
+Regras de Boa Prática:
 
+camelCase: Sempre usar em variáveis , parametros de construtores e metodos.
+PascalCase: Sempre usar para criar classes, Construtores, propriedades e métodos.
+kibab-case: Nao é usado em C#
+snake_case: 
