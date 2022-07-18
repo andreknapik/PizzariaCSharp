@@ -62,7 +62,9 @@ var valor2 = pedido2
 .AdicionarPizza(pizza4)
 .ObterValorTotal();
 
-pedido1.FinalizarPedido();
+pedido2.FinalizarPedido();
 controllerPedido.Adicionar(pedido2);
 
+Console.WriteLine(pedido1);
 Console.WriteLine();
+Console.WriteLine(pedido1);
