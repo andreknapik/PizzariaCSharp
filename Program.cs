@@ -67,4 +67,9 @@ controllerPedido.Adicionar(pedido2);
 
 Console.WriteLine(pedido1);
 Console.WriteLine();
-Console.WriteLine(pedido1);
+Console.WriteLine(pedido2.Cliente);
+Console.WriteLine(pedido2.Bebidas);
+Console.WriteLine(pedido2.Pizzas);
+Console.WriteLine(pedido2.GetType);
+Console.WriteLine(pedido2.DataEHora);
+Console.WriteLine(pedido2.ObterValorTotal);
